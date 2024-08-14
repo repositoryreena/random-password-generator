@@ -1,0 +1,75 @@
+/* Existing styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input {
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: pink;
+    padding-right: 40px; /* Space for the icon */
+}
+
+/* Icon styling */
+.fa-copy {
+    position: absolute;
+    right: 10px; /* Position it inside the input field */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray; /* Gray color for the icon */
+    font-size: 16px; /* Adjust icon size as needed */
+}
+.fa-copy:hover {
+    color: black;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.btn:active {
+    transform: scale(0.96); /* Scales the button to 96% of its original size */
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    bottom: 20px; /* Position it at the bottom */
+    right: -300px; /* Hide initially outside the viewport on the right */
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: right 0.5s ease-in-out; /* Slide in effect from the right */
+    z-index: 1000; /* Ensure it’s on top */
+    font-family: 'Courier New', Courier, monospace;
+}
